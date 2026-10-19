@@ -1,0 +1,23 @@
+model         : C:/Users/admin/AppData/Local/Temp/so101_mjcf_work/extract/SO-ARM101_ROS2/so_arm101_description/mjcf/scene.xml
+sizes         : nq=6 nv=6 nu=6 nbody=8 ngeom=31 nmesh=13 ncam=0 nkey=0
+options       : timestep=0.0020s gravity=(0.0,0.0,-9.8) integrator=mjINT_EULER cone=mjCONE_ELLIPTIC
+total mass    : 0.632 kg
+joints:
+  [0] shoulder_pan_joint       type=mjJNT_HINGE qposadr=0 limited range=(-1.9199,+1.9199) damping=0.600 armature=0.0280
+  [1] shoulder_lift_joint      type=mjJNT_HINGE qposadr=1 limited range=(-1.7453,+1.7453) damping=0.600 armature=0.0280
+  [2] elbow_flex_joint         type=mjJNT_HINGE qposadr=2 limited range=(-1.6900,+1.5400) damping=0.600 armature=0.0280
+  [3] wrist_flex_joint         type=mjJNT_HINGE qposadr=3 limited range=(-1.6000,+1.6000) damping=0.600 armature=0.0280
+  [4] wrist_roll_joint         type=mjJNT_HINGE qposadr=4 limited range=(-2.3000,+2.3000) damping=0.600 armature=0.0280
+  [5] gripper_joint            type=mjJNT_HINGE qposadr=5 limited range=(+0.0000,+1.0000) damping=0.600 armature=0.0280
+actuators:
+  [0] shoulder_pan_joint       -> shoulder_pan_joint       ctrl=(-1.9199,+1.9199) kp=998.22 kv=2.73 forcerange=(-3.35,+3.35)
+  [1] shoulder_lift_joint      -> shoulder_lift_joint      ctrl=(-1.7453,+1.7453) kp=998.22 kv=2.73 forcerange=(-3.35,+3.35)
+  [2] elbow_flex_joint         -> elbow_flex_joint         ctrl=(-1.6900,+1.5400) kp=998.22 kv=2.73 forcerange=(-3.35,+3.35)
+  [3] wrist_flex_joint         -> wrist_flex_joint         ctrl=(-1.6000,+1.6000) kp=998.22 kv=2.73 forcerange=(-3.35,+3.35)
+  [4] wrist_roll_joint         -> wrist_roll_joint         ctrl=(-2.3000,+2.3000) kp=998.22 kv=2.73 forcerange=(-3.35,+3.35)
+  [5] gripper_joint            -> gripper_joint            ctrl=(+0.0000,+1.0000) kp=998.22 kv=2.73 forcerange=(-3.35,+3.35)
+sites:
+  [0] baseframe        body=base_link
+  [1] gripperframe     body=gripper_link
+cameras:
+  (none)

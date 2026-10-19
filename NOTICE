@@ -1,0 +1,16 @@
+SO-ARM101 × MuJoCo Simulation for LeRobot
+Copyright 2026 Juxi Technology
+
+This product includes material from third parties, used under the
+Apache License, Version 2.0:
+
+1. mujoco_menagerie — SO-ARM100 robot description, meshes and scene
+   Source:      https://github.com/google-deepmind/mujoco_menagerie
+   Copyright:   Google DeepMind
+   Redistributed under Apache-2.0 — see assets/menagerie_so_arm100/LICENSE
+   The SO-ARM100 description is derived from the open-source SO-ARM100
+   project by The Robot Studio (https://github.com/TheRobotStudio/SO-ARM100).
+
+This project depends on LeRobot (https://github.com/huggingface/lerobot),
+which is licensed under the Apache License 2.0. LeRobot source code is not
+redistributed in this repository.

@@ -1,0 +1,13 @@
+# Generated artifacts — recorded datasets, exported videos, training checkpoints, renders
+outputs/
+
+# Recorded media (calibration videos etc.) — large, kept local
+media/
+
+# Camera-tuning render gallery and vendor datasheet excerpts (generated/local reference)
+assets/camera/renders/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
